@@ -21,7 +21,7 @@ module.exports = {
       {},
       {
         get: (target, module) => {
-          return path.join(__dirname, `../../node_modules/${module}`);
+          return path.join(__dirname, `./node_modules/${module}`);
         },
       },
     ),
