@@ -6,7 +6,7 @@
  * @flow strict-local
  */
 
-import React from 'react';
+import React, {useEffect} from 'react';
 import {
   SafeAreaView,
   StatusBar,
@@ -16,14 +16,23 @@ import {
 } from 'react-native';
 
 import {Box} from '@org/components';
+import {useTest} from '@org/hooks';
+import {log} from '@org/helpers';
 
 const App = () => {
   const isDarkMode = useColorScheme() === 'dark';
+
+  const test = useTest();
+
+  useEffect(() => {
+    log("I am a logger within 'packages'");
+  }, []);
+
   return (
     <SafeAreaView>
       <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} />
       <View>
-        <Text>I am a text!</Text>
+        <Text>I am a text! - {test}</Text>
       </View>
       <Box />
     </SafeAreaView>

@@ -11,6 +11,8 @@
   },
   "dependencies": {
     "@org/components": "workspace:*",
+    "@org/helpers": "workspace:*",
+    "@org/hooks": "workspace:*",
     "react": "17.0.1",
     "react-native": "0.64.0"
   },

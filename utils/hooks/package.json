@@ -1,0 +1,11 @@
+{
+  "name": "@org/hooks",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "react": "^17.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17"
+  }
+}
